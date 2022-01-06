@@ -22,7 +22,7 @@ import useStyles from "./styles";
   },
 ]; */
 
-const Products = ({ products }) => {
+const Products = ({ products, onAddToCart }) => {
   const classes = useStyles();
   return (
     <main className={classes.content}>
@@ -31,7 +31,7 @@ const Products = ({ products }) => {
         {products.map((product) => {
           return (
             <Grid item key={product.id} xs={10} sm={6} md={4} lg={3}>
-              <Product product={product} />
+              <Product product={product} onAddToCart={onAddToCart} />
             </Grid>
           );
         })}
