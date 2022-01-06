@@ -28,7 +28,7 @@ const Navbar = () => {
               alt="commerce.js"
               height="25px"
               className={classes.image}
-            />{" "}
+            />
             Commerce.js
           </Typography>
           <div className={classes.grow} />
