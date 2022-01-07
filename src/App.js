@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { commerce } from "./lib/commerce";
-import { Products, Navbar, Cart } from "./components";
+import { Products, Navbar, Cart, Checkout } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -51,8 +51,6 @@ const App = () => {
     fetchCart();
   }, []); //running at the start or at render
 
-  console.log(cart);
-
   return (
     <Router>
       <div>
@@ -77,6 +75,8 @@ const App = () => {
               />
             }
           />
+
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </div>
     </Router>
