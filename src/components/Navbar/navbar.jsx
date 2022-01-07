@@ -28,7 +28,7 @@ const Navbar = ({ totalItems }) => {
         <Toolbar>
           <Typography
             component={Link}
-            to="/cart"
+            to="/"
             variant="h6"
             className={classes.title}
             color="inherit"
